@@ -1,3 +1,8 @@
+# Finder GoV
+
+- Support `vscode` for now
+- Support `Apple Silicon`
+
 # 𝗙𝗶𝗻𝗱𝗲𝗿 𝗚𝗼
 
 ❤️ Support my app ❤️
@@ -29,8 +34,6 @@
 ![](Images/go1.gif)
 
 ### As a macOS application
-
-- Support `vscode` for now
 
 - Support `iTerm` for now
 
@@ -69,11 +72,23 @@ defaults write com.sinlov.FinderGoV terminal code
 
 #### How to use
 
-- Because of sandbox, we need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.onmyway133.FinderGo.FinderSyncExtension` by running
+- Because of sandbox, we need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.sinlov.FinderGoV.FinderSyncExtension` by running
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/sinlov/FinderGo/master/install.sh | sh
 ```
+
+or use as
+
+download [https://github.com/sinlov/FinderGo/releases](https://github.com/sinlov/FinderGo/releases) `Scripts.zip`
+
+run terminal
+
+```sh
+open ${HOME}/Library/Application\ Scripts/com.sinlov.FinderGoV.FinderSyncExtension
+```
+
+puts all unzip file `*.scpt` to folder.
 
 - Check for `System Preferences` -> `Extensions` -> `Finder` to enable `FinderGo` if it is not enabled yet
 
