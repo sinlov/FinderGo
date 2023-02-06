@@ -56,6 +56,7 @@ class FinderSync: FIFinderSync, NSMenuDelegate {
     menu.addItem(withTitle: "iTerm", action: #selector(openiTerm(_:)), keyEquivalent: "")
     menu.addItem(withTitle: "Terminal", action: #selector(openTerminal(_:)), keyEquivalent: "")
     menu.addItem(withTitle: "Hyper", action: #selector(openHyper(_:)), keyEquivalent: "")
+    menu.addItem(withTitle: "code", action: #selector(openCode(_:)), keyEquivalent: "")
 
     return menu
   }
@@ -84,6 +85,10 @@ class FinderSync: FIFinderSync, NSMenuDelegate {
   @IBAction func openHyper(_ sender: AnyObject?) {
     run(fileName: "hyper")
   }
+  @IBAction func openCode(_ sender: AnyObject?) {
+    run(fileName: "code")
+  }
+
 
   // MARK: - Script
 
