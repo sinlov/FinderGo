@@ -1,6 +1,6 @@
 # 𝗙𝗶𝗻𝗱𝗲𝗿 𝗚𝗼
 
-❤️ Support my app ❤️ 
+❤️ Support my app ❤️
 
 - [Push Hero - pure Swift native macOS application to test push notifications](https://www.producthunt.com/posts/push-hero-2)
 - [PastePal - Pastboard, note and shortcut manager](https://www.producthunt.com/posts/pastepal)
@@ -22,13 +22,15 @@
 
 ## How to install
 
-- Get the binary from https://github.com/onmyway133/FinderGo/releases
+- Get the binary from https://github.com/sinlov/FinderGo/releases
 
 ## How to use
 
 ![](Images/go1.gif)
 
 ### As a macOS application
+
+- Support `vscode` for now
 
 - Support `iTerm` for now
 
@@ -41,9 +43,10 @@
 Run either of these to change your default terminal that FinderGo uses
 
 ```
-defaults write com.onmyway133.FinderGo terminal Terminal
-defaults write com.onmyway133.FinderGo terminal iTerm
-defaults write com.onmyway133.FinderGo terminal Hyper
+defaults write com.sinlov.FinderGoV terminal Terminal
+defaults write com.sinlov.FinderGoV terminal iTerm
+defaults write com.sinlov.FinderGoV terminal Hyper
+defaults write com.sinlov.FinderGoV terminal code
 ```
 
 #### How to change icon
@@ -56,6 +59,7 @@ defaults write com.onmyway133.FinderGo terminal Hyper
 - [x] Go to Terminal
 - [x] Go to iTerm
 - [x] Go to Hyper
+- [x] Go to code
 
 <div align = "center">
 <img src="Images/screenshot2.png" />
@@ -65,10 +69,10 @@ defaults write com.onmyway133.FinderGo terminal Hyper
 
 #### How to use
 
-- Because of sandbox, we need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.onmyway133.FinderGo.FinderSyncExtension` by running 
+- Because of sandbox, we need to copy scripts from `FinderSyncExtension/Scripts` in project to `/Library/Application Scripts/com.onmyway133.FinderGo.FinderSyncExtension` by running
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/sinlov/FinderGo/master/install.sh | sh
 ```
 
 - Check for `System Preferences` -> `Extensions` -> `Finder` to enable `FinderGo` if it is not enabled yet
@@ -81,10 +85,12 @@ curl -fsSL https://raw.githubusercontent.com/onmyway133/FinderGo/master/install.
 
 ## Credit
 
+- NewIcon from https://www.iconfinder.com/icons/87782/finder_folder_icon
 - Icon http://emojione.com/
 
 ## Author
 
+sinlov sinlovgmppt@gmail.com
 Khoa Pham, onmyway133@gmail.com
 
 ## License
